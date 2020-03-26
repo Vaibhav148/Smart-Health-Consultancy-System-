@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    android:background="@drawable/pic3"
+    tools:context=".patDash"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/pat_dash_01"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:gravity="bottom"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorGrapeFruit"
+                    android:onClick="patUpdateProfile"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/update_profile"
+                        android:tint="@color/colorWhite"
+                        android:onClick="patUpdateProfile"
+                        />
+                    <TextView
+                        android:id="@+id/patUpdateProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorGrapeFruitDark"
+                        android:text="Update Profile"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:onClick="patUpdateProfile"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_doc"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBitterSweet"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/search_doctor"
+                        android:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorBitterSweetDark"
+                        android:padding="8dp"
+                        android:text="Search Doctor"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorFlower"
+                    android:onClick="feed"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/feedback"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorFlowerDark"
+                        android:text="Feedback"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorGrapeFruit"
+                    android:onClick="patAppointments"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/update_profile"
+                        android:tint="@color/colorWhite"
+                        android:onClick="patAppointments"
+                        />
+                    <TextView
+                        android:id="@+id/pat_appointment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/colorGrapeFruitDark"
+                        android:text="My Appointments"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:onClick="patAppointments"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/patMed"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBitterSweet"
+                    android:orientation="vertical"
+                    android:onClick="patMedRec">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/search_doctor"
+                        android:tint="@color/colorWhite"
+                        android:onClick="patMedRec"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/colorBitterSweetDark"
+                        android:padding="8dp"
+                        android:text="Medical Record"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:onClick="patMedRec"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/patSymCheck"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBitterSweet"
+                    android:orientation="vertical"
+                    android:onClick="symCheck">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/search_doctor"
+                        android:tint="@color/colorWhite"
+                        android:onClick="symCheck"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/colorBitterSweetDark"
+                        android:padding="8dp"
+                        android:text="Symptom Checker"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:onClick="symCheck"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+

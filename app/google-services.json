@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "611667235187",
+    "firebase_url": "https://shacs-adfcd.firebaseio.com",
+    "project_id": "shacs-adfcd",
+    "storage_bucket": "shacs-adfcd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611667235187:android:bbb7388cee1da507b8f506",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611667235187-bj0475n31m3qbaa58k06onkrr9ga3ne7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuNWgd5G4iWBFaL_ZF6D6_6ssSUvHoMfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611667235187-bj0475n31m3qbaa58k06onkrr9ga3ne7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

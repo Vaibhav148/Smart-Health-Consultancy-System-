@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".addDoc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            style="@style/headerText"
+            android:text="Enter Doctor Details"
+            android:layout_marginBottom="20dp"/>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/nameImageView"
+                app:srcCompat="@drawable/ic_name"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:text="Name"
+                android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <EditText
+                android:layout_toRightOf="@id/nameImageView"
+                android:layout_below="@id/nameTextView"
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/doc_profile_name1"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/mobileImageView"
+                app:srcCompat="@drawable/ic_mobile"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Mobile"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:id="@+id/mobileTextView"
+                style="@style/profileDetailsTextMain"/>
+
+            <EditText
+                android:layout_toRightOf="@id/mobileImageView"
+                android:layout_below="@id/mobileTextView"
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/doc_profile_ph"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/emailImageView"
+                app:srcCompat="@drawable/ic_email"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Email"
+                android:layout_toRightOf="@id/emailImageView"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/emailTextView"/>
+
+            <EditText
+                android:layout_toRightOf="@id/emailImageView"
+                style="@style/profileDetailsMiniText"
+                android:layout_below="@id/emailTextView"
+                android:id="@+id/doc_profile_email"
+                />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/addressImageView"
+                app:srcCompat="@drawable/ic_address"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Address"
+                android:layout_toRightOf="@id/addressImageView"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/addressTextView"/>
+
+            <EditText
+                android:layout_toRightOf="@id/addressImageView"
+                style="@style/profileDetailsMiniText"
+                android:layout_below="@id/addressTextView"
+                android:id="@+id/doc_profile_addr"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/dobImageView"
+                app:srcCompat="@drawable/ic_dob"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Specialization"
+                android:layout_toRightOf="@id/dobImageView"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/dobTextView"/>
+
+            <EditText
+                android:layout_toRightOf="@id/dobImageView"
+                style="@style/profileDetailsMiniText"
+                android:layout_below="@id/dobTextView"
+                android:id="@+id/doc_profile_spec"/>
+
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/imgdoc"
+                app:srcCompat="@drawable/ic_dob"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Qualifications"
+                android:layout_toRightOf="@id/imgdoc"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/imgdoctext"/>
+
+            <EditText
+
+                android:layout_toRightOf="@id/imgdoc"
+                style="@style/profileDetailsMiniText"
+                android:layout_below="@id/imgdoctext"
+                android:id="@+id/doc_profile_qual"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/imgdoc1"
+                app:srcCompat="@drawable/ic_dob"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Bio"
+                android:layout_toRightOf="@id/imgdoc1"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/imgdoctext1"/>
+
+            <EditText
+
+                android:layout_toRightOf="@id/imgdoc1"
+                style="@style/profileDetailsMiniText"
+                android:layout_below="@id/imgdoctext1"
+                android:id="@+id/doc_profile_bio"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="40dp"
+            android:background="#E91E63"
+            android:text="Submit"
+            android:id="@+id/doc_profile_submit"
+            android:onClick="addDocSubmit"/>
+
+
+        <View style="@style/proifleDetailsView" />
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

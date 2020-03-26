@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MobDoc-master.iml" filepath="$PROJECT_DIR$/MobDoc-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MobDoc-master (3)-MobDoc-master.iml" filepath="$PROJECT_DIR$/MobDoc-master (3)-MobDoc-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Symptom Checker/Symptom Checker.iml" filepath="$PROJECT_DIR$/Symptom Checker/Symptom Checker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Symptom Checker/app.iml" filepath="$PROJECT_DIR$/Symptom Checker/app.iml" />
+    </modules>
+  </component>
+</project>

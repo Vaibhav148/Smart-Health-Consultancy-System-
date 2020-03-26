@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".docMedRec">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            style="@style/headerText"
+            android:text=""
+            android:layout_marginBottom="20dp"/>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+
+            <TextView
+                android:id="@+id/docmedtext"
+                android:text="Name"
+
+                style="@style/profileDetailsTextMain" />
+
+            <EditText
+                android:text="developer"
+
+                android:layout_below="@id/docmedtext"
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/docmednameedit"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <TextView
+                android:text="Symptoms"
+                android:id="@+id/docmedSym"
+                style="@style/profileDetailsTextMain"/>
+
+            <EditText
+                android:text=""
+                android:layout_below="@id/docmedSym"
+                style="@style/profileDetailsMiniText"
+                android:id="@+id/docmedsymedit"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <TextView
+                android:text="Disease"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/docmeddisease"/>
+
+            <EditText
+                android:text=""
+                style="@style/profileDetailsMiniText"
+                android:layout_below="@id/docmeddisease"
+                android:id="@+id/docmeddiseaseedit"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <TextView
+                android:text="Prescription"
+                style="@style/profileDetailsTextMain"
+                android:id="@+id/docmedpresc"/>
+
+            <EditText
+                android:text=""
+                style="@style/profileDetailsMiniText"
+                android:layout_below="@id/docmedpresc"
+                android:id="@+id/docmedprescedit"/>
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="50dp"
+           android:layout_gravity="center"
+           android:text="Update Medical record"
+           android:background="@drawable/input_back"
+           android:id="@+id/updatemedrec"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

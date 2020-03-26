@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="2dp">
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/pat_med_doc_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+
+        android:textColor="@color/light_black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pat_med_sym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pat_med_doc_name"
+        android:layout_marginTop="4dp"
+
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/pat_med_dis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pat_med_sym"
+        android:layout_marginTop="4dp"
+
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/pat_med_pres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pat_med_dis"
+        android:layout_marginTop="4dp"
+
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+
+</RelativeLayout>
