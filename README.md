@@ -1,4 +1,3 @@
-# 1RV17CS178
 Smart Health Android Consultancy System
 
 # **SMART HEALTH ANDROID CONSULTANCY SYSTEM**
